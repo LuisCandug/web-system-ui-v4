@@ -14,10 +14,12 @@
             title="John Leider"
           >
             <template #append>
+              <v-app-bar :elevation="2"></v-app-bar>
               <v-btn
                 icon="mdi-chevron-left"
                 variant="text"
                 @click.stop="rail = !rail"
+              
               ></v-btn>
             </template>
           </v-list-item>
@@ -36,7 +38,9 @@
       <!-- Main Content -->
       <v-main>
         <!-- Top App Bar -->
-        <v-app-bar flat color="white" elevation="1" height="72">
+         
+        <v-app-bar color="white" elevation="1" height="72" width="70%">
+          <v-app-bar-nav-icon @click.stop="rail = !rail"></v-app-bar-nav-icon>
           <v-app-bar-title class="text-black">Application Bar</v-app-bar-title>
         </v-app-bar>
 
