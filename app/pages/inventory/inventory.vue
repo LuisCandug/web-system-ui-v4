@@ -1,6 +1,6 @@
 <template>
   <v-card
-    title="Nutrition"
+    title="INventory"
     flat
   >
     <template v-slot:text>
